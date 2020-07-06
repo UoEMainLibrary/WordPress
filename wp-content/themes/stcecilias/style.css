@@ -11,3 +11,122 @@
     Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
     Text Domain:  twentyseventeenchild
 */
+body {
+    background-color:rgb(101,1,0);
+}
+
+
+/* NAVBAR */
+#masthead .wrap {
+    position: initial;
+}
+.menu-navbar-container {
+    margin-top: -25px;
+}
+#icon-arrow-right,
+.site-header .navigation-top .menu-scroll-down {
+    display: none;
+}
+.navigation-top {
+    position: fixed;    /* set navbar to remain in top position */
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    top: 0;             /* set navbar to top of page */
+    left: 0;
+    right: 0;
+    background-color:rgb(101,1,0);
+    font-size: 2rem;
+    border: 0;
+}
+.navigation-top .wrap {
+    margin: 0;          /* set navbar links to sit from far left to right */
+}
+.navigation-top .wrap a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-top: -10px;
+    padding: 1em 1.25em 0em;
+    transition: transform .2s;
+    transform-origin: center center;
+}
+.navigation-top .wrap a:hover {
+    transform: scale(1.1);
+}
+/* Sub Nav */
+ul.sub-menu {
+    margin-left: -260px;
+}
+.main-navigation ul ul {
+    background-color: rgb(153,52,0);
+}
+.main-navigation li li {
+    padding-left: 2em;
+    width: 10%;
+}
+.main-navigation ul li:hover > ul, 
+.main-navigation ul li.focus > ul {
+    display: flex;
+}
+.js .main-navigation ul, .js .main-navigation ul ul, 
+.js .main-navigation > div > ul {
+    width: 2000%;
+}
+.sub-menu a {
+    margin-bottom: 20px;
+} 
+.main-navigation li li:hover, 
+.main-navigation li li.focus {
+    background: none;
+}
+/*.main-navigation li li a:hover, 
+.main-navigation li li a.focus {
+    transform: scale(1.5);
+}
+.navigation-top .wrap a:visited {
+    text-decoration: none;
+}
+.navigation-top .wrap a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.navigation-top .wrap a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.navigation-top .wrap a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}*/
+
+/* HEADER */
+.site-branding .wrap {
+    display: block;
+    text-align: center;
+    transition: transform .5s ease;
+}
+.custom-logo-link img, 
+body.home.title-tagline-hidden.has-header-image .custom-logo-link img, 
+body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
+    max-width: 150%;
+    max-height: 150%;
+    margin-left: -12em;
+}
+.site-branding a:hover, 
+.site-branding a:focus {
+    opacity: 1;
+    transform: scale(1.1) rotate(0.01deg);
+
+}

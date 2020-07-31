@@ -11,12 +11,113 @@
     Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
     Text Domain:  twentyseventeenchild
 */
+
+/* GLOBAL */
 body {
     background-color:rgb(101,1,0);
 }
+a {
+    color: rgb(101,1,0);
+    text-decoration: none!important;
+    cursor: pointer;
 
+}
+b, strong {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+ul {
+    list-style: inside;
+    text-align: left;
+}
+#inline-image {
+    outline: solid 0.2rem #650200;
+}
+.fa-eye {
+    float: left;
+    margin-right: 10px;
+}
+.entry-content a:focus, 
+.entry-content a:hover, 
+.entry-summary a:focus, 
+.entry-summary a:hover, 
+.comment-content a:focus, 
+.comment-content a:hover, 
+.widget a:focus, 
+.widget a:hover, 
+.site-footer .widget-area a:focus, 
+.site-footer .widget-area a:hover, 
+.posts-navigation a:focus, 
+.posts-navigation a:hover, 
+.comment-metadata a:focus, 
+.comment-metadata a:hover, 
+.comment-metadata a.comment-edit-link:focus, 
+.comment-metadata a.comment-edit-link:hover, 
+.comment-reply-link:focus, 
+.comment-reply-link:hover, 
+.widget_authors a:focus strong, 
+.widget_authors a:hover strong, 
+.entry-title a:focus, 
+.entry-title a:hover, 
+.entry-meta a:focus, 
+.entry-meta a:hover, 
+.page-links a:focus 
+.page-number, 
+.page-links a:hover .page-number, 
+.entry-footer a:focus, 
+.entry-footer a:hover, 
+.entry-footer .cat-links a:focus, 
+.entry-footer .cat-links a:hover, 
+.entry-footer .tags-links a:focus, 
+.entry-footer .tags-links a:hover, 
+.post-navigation a:focus, 
+.post-navigation a:hover, 
+.pagination a:not(.prev):not(.next):focus, 
+.pagination a:not(.prev):not(.next):hover, 
+.comments-pagination a:not(.prev):not(.next):focus, 
+.comments-pagination a:not(.prev):not(.next):hover, 
+.logged-in-as a:focus, 
+.logged-in-as a:hover, 
+a:focus .nav-title, 
+a:hover .nav-title, 
+.edit-link a:focus, 
+.edit-link a:hover, 
+.site-info a:focus, 
+.site-info a:hover, 
+.widget .widget-title a:focus, 
+.widget .widget-title a:hover, 
+.widget ul li a:focus, 
+.widget ul li a:hover {
+    color: rgb(101,1,0);
+    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    box-shadow: inset 0 0 0  rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+}
+/* Remove external link underline */
+.entry-content a, 
+.entry-summary a, 
+.comment-content a, 
+.widget a, 
+.site-footer .widget-area a, 
+.posts-navigation a, 
+.widget_authors a strong {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    transition: none;
+    transition: none;
+}
+/* GLOBAL END */
 
 /* NAVBAR */
+.main-navigation a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.2rem;
+    line-height: 2.5;
+}
 #masthead .wrap {
     position: initial;
 }
@@ -51,9 +152,9 @@ body {
     transition: transform .2s;
     transform-origin: center center;
 }
-.navigation-top .wrap a:hover {
+/*.navigation-top .wrap a:hover {
     transform: scale(1.1);
-}
+}*/
 /* Sub Nav */
 ul.sub-menu {
     margin-left: -260px;
@@ -62,12 +163,12 @@ ul.sub-menu {
     background-color: rgb(153,52,0);
 }
 .main-navigation li li {
-    padding-left: 2em;
-    width: 10%;
+    left: 10rem;
 }
 .main-navigation ul li:hover > ul, 
 .main-navigation ul li.focus > ul {
     display: flex;
+    left: 12.2rem;
 }
 .js .main-navigation ul, .js .main-navigation ul ul, 
 .js .main-navigation > div > ul {
@@ -80,53 +181,261 @@ ul.sub-menu {
 .main-navigation li li.focus {
     background: none;
 }
-/*.main-navigation li li a:hover, 
-.main-navigation li li a.focus {
-    transform: scale(1.5);
-}
-.navigation-top .wrap a:visited {
-    text-decoration: none;
-}
-.navigation-top .wrap a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-.navigation-top .wrap a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -4px;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-.navigation-top .wrap a:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}*/
+/* NAVBAR END */
 
 /* HEADER */
-.site-branding .wrap {
-    display: block;
-    text-align: center;
-    transition: transform .5s ease;
+.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media, .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media {
+    height: calc(100vh - 32px);
 }
-.custom-logo-link img, 
-body.home.title-tagline-hidden.has-header-image .custom-logo-link img, 
-body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
-    max-width: 150%;
-    max-height: 150%;
-    margin-left: -12em;
+.branding-logos {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin-left: 7%;
+} 
+.funding-logo {
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    margin-top: 20px;
 }
-.site-branding a:hover, 
-.site-branding a:focus {
-    opacity: 1;
-    transform: scale(1.1) rotate(0.01deg);
+#flogo1 { width: 100%; background-size: 100%; }
+#flogo2 { width: 100%; margin-left: 10%; }
+#flogo3 { width: 65%; margin-right: 5%; }
+#flogo4 { width: 48%; margin-right: 5%; }
+#flogo5 { width: 110%; }
 
+.funding-logo img{
+    height: 100px;
 }
+.branding-background {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 120px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(101,1,0);
+    opacity: 0.3;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(101,1,0)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+}
+.branding-logos-background {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    opacity: 0.5;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(-25%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(125%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+}
+.custom-logo {
+    max-width: 120%;
+}
+#full-site-logo {
+    padding-top: 75%;
+}
+/* Header background slideshow */
+.custom-header-media {
+    position:relative;
+    margin:0 auto;
+}
+.custom-header-media img {
+    position:absolute;
+    left:0;
+    top: 0; 
+    opacity: 0; 
+    animation: stcsfader 80s linear infinite;
+}
+.custom-header-media img:nth-child(1) { animation-delay: 0s; }
+.custom-header-media img:nth-child(2) { animation-delay: 10s; }
+.custom-header-media img:nth-child(3) { animation-delay: 20s; }
+.custom-header-media img:nth-child(4) { animation-delay: 30s; }
+.custom-header-media img:nth-child(5) { animation-delay: 40s; }
+.custom-header-media img:nth-child(6) { animation-delay: 50s; }
+.custom-header-media img:nth-child(7) { animation-delay: 60s; }
+.custom-header-media img:nth-child(8) { animation-delay: 70s; }
+@keyframes stcsfader {
+    0%      { opacity: 0; } 
+    03.33%  { opacity: 1; }
+    06.66%  { opacity: 1; }
+    09.99%  { opacity: 1; }
+    13.33%  { opacity: 1; }
+    16.65%  { opacity: 0; }
+    100%    { opacity: 0; }
+}
+/* Header background slideshow end */
+/* HEADER END */
+
+/* FOOTER */
+.site-info {
+    width: 100%;
+    text-align: center;
+}
+.site-info a {
+    color: rgb(101,1,0);
+}
+/* FOOTER END */
+
+
+
+/* STATIC PAGE CUSTOMISATIONS */
+
+/* GLOBAL PAGE */
+/* Set all pages to have one wide colum */
+body:not(.has-sidebar):not(.page-one-column) .page-header, 
+body.has-sidebar.error404 #primary .page-header, 
+body.page-two-column:not(.archive) #primary .entry-header, 
+body.page-two-column.archive:not(.has-sidebar) #primary .page-header,
+.blog:not(.has-sidebar) #primary article, 
+.archive:not(.page-one-column):not(.has-sidebar) #primary article, 
+.search:not(.has-sidebar) #primary article, 
+.error404:not(.has-sidebar) #primary .page-content, 
+.error404.has-sidebar #primary .page-content, 
+body.page-two-column:not(.archive) #primary .entry-content, 
+body.page-two-column #comments,
+.entry-content {
+    float: unset;
+    width: auto;
+    text-align: center;
+}
+.entry-content h2, h3, h4, h5, h6, p,
+.entry-title h2, h3, h4, h5, h6, p {
+    text-align: justify;
+}
+/* Set the page title to be nice and big */
+.entry-title,
+.page .panel-content .entry-title, 
+.page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: -2rem;
+}
+/* Set the sub headers to follow the same style rules and the page titles */
+.entry-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #222;
+}
+.entry-content h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.3rem;
+}
+.entry-content h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+/* Quick links to page blocks */
+.quick-links {
+    display: table;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+}
+.quick-links li {
+    float: left;
+    padding: 2px;
+    width: 150px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+/* Offset for quick link anchors */
+#opening, #travel, #access, #tours, #events {
+    margin-top: -250px;
+    padding-top: 250px;
+}
+.wp-block-image figure.alignleft,
+.wp-block-image figure.alignright {
+    margin-top: 10px;
+}
+/* Page dividers */
+.divider {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    outline: solid 1rem #650200;
+}
+#divider-one {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-one.png");
+}
+#divider-two {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-two.png");
+}
+#divider-three {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-three.png");
+}
+#divider-four {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-four.png");
+}
+#divider-five {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-five.png");
+}
+.divider-offset {
+    width: auto;
+    height: 100px;
+}
+.divider-offset-xtra {
+    width: auto;
+    height: 50px;
+}
+/* GLOBAL PAGE END */
+
+/* FRONT PAGE */
+#hide-front {
+    display: none; /* Don't display main content div of home page so it's simply the header slideshow and navbar */
+}
+/* FRONT PAGE END */
+
+/* ABOUT PAGE */
+/* ABOUT PAGE END */
+
+/* VISIT PAGE */
+#wpgmza_map {
+    margin-bottom: 1.5em;
+    /*outline: solid 0.2rem #650200;*/
+}
+/* VIST PAGE END */
+
+/* STATIC PAGE CUSTOMISATIONS END */

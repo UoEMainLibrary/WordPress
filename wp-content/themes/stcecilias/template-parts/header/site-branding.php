@@ -17,12 +17,20 @@
 
 		<!-- Home page logo image to fit with larger header space --> 
 		<?php if ( is_front_page() ) : ?>
-			<img class="custom-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
+			<div class="logo-container">
+				<a href="<?php echo home_url() ?>">
+					<img class="custom-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
+				</a>
+			</div>
 		<!-- end of home page logo --> 
 
 		<!-- Full site logo image to fit with smaller header space --> 
 		<?php else : ?>
-			<img class="custom-logo" id="full-site-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
+			<div class="logo-container" id="full-site-logo">
+				<a href="<?php echo home_url() ?>">
+					<img class="custom-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
+				</a>
+			</div>
 		<?php endif; ?>
 		<!-- end of full site logo --> 
 

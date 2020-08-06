@@ -9,7 +9,13 @@
  */
 
 ?>
+<!--<?php
+		wp_nav_menu( array( 
+			'theme_location' => 'st-cecilias-menu', 
+			'container_class' => 'custom-menu-class' ) ); 
+		?>-->
 <div class="custom-header">
+		
 
 		<div class="custom-header-media">
 			<!--<?php the_custom_header_markup(); ?>-->

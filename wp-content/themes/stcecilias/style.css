@@ -109,6 +109,22 @@ a:hover .nav-title,
     transition: none;
     transition: none;
 }
+/* Buttons */
+.wp-block-buttons {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.wp-block-buttons a,
+.wp-block-button a,
+.entry-content .wp-block-button__link {
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+.button-hover a:hover {
+    background-color: rgb(175,31,36)!important;
+}
+/* Buttons end */
 /* GLOBAL END */
 
 /* NAVBAR */
@@ -158,7 +174,7 @@ a:hover .nav-title,
     position: relative;
     text-decoration: none;
     color: #fff;
-    padding: 1em 1.25em 0em;
+    padding: 1em 1.25em;
     transition: transform .2s;
     transform-origin: center center;
 }
@@ -180,7 +196,7 @@ a:hover .nav-title,
     left: -1px;
 }
 .sub-menu a {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 } 
 .main-navigation ul li.menu-item-has-children:before, 
 .main-navigation ul li.menu-item-has-children:after, 
@@ -191,7 +207,7 @@ a:hover .nav-title,
 .main-navigation li li:hover, 
 .main-navigation li li.focus {
     background: rgb(175,31,36);
-    bottom: -10px;
+
 }
 .main-navigation li li.focus > a, 
 .main-navigation li li:focus > a, 
@@ -202,7 +218,12 @@ a:hover .nav-title,
 .main-navigation li li.current-menu-item a:hover, 
 .main-navigation li li.current_page_item a:focus, 
 .main-navigation li li.current-menu-item a:focus {
-    bottom: 10px;
+    /*bottom: 10px;*/
+}
+@media screen and (min-width: 48em){
+    .main-navigation li li {
+        bottom: -10px;
+    }
 }
 /* NAVBAR END */
 
@@ -410,7 +431,7 @@ body.page-two-column #comments,
     margin-right: auto ;
 }
 /* Offset for quick link anchors */
-#opening, #travel, #access, #tours, #events, #history, #gallery, #contact {
+#opening, #travel, #access, #tours, #events, #history, #gallery, #contact, #involved {
     margin-top: -250px;
     padding-top: 250px;
 }

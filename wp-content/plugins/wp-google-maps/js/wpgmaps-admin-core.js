@@ -529,8 +529,11 @@ jQuery(function($) {
 			
 			
 			var oldMarker = WPGMZA.mapEditPage.map.getMarkerByID(wpgm_edit_id);
-			if(oldMarker)
+			if(oldMarker) {
+				console.log("removing old marker");
+				console.log(oldMarker);
 				WPGMZA.mapEditPage.map.removeMarker(oldMarker);
+			}
 			
             var wpgm_address = "0";
             var wpgm_gps = "0";
@@ -553,10 +556,16 @@ jQuery(function($) {
             if (do_geocode === true) {
 
             geocoder.geocode( { 'address': wpgm_address}, function(results, status) {
+            	console.log(results);
                 if (status == WPGMZA.Geocoder.SUCCESS) {
-                    wpgm_gps = String(results[0].geometry.location);
-                    var wpgm_lat = parseFloat(results[0].geometry.location.lat);
-                    var wpgm_lng = parseFloat(results[0].geometry.location.lng);
+                	if (!results[0].geometry && results[0].latLng) {
+                		var wpgm_lat = parseFloat(results[0].latLng._lat);
+	                    var wpgm_lng = parseFloat(results[0].latLng._lat);
+                	} else {
+	                    wpgm_gps = String(results[0].geometry.location);
+	                    var wpgm_lat = parseFloat(results[0].geometry.location.lat);
+	                    var wpgm_lng = parseFloat(results[0].geometry.location.lng);
+	                }
 
                     var data = {
                         action: 'edit_marker',

@@ -18,18 +18,18 @@
 		<!-- Home page logo image to fit with larger header space --> 
 		<?php if ( is_front_page() ) : ?>
 			<div class="logo-container">
-				<a href="<?php echo home_url() ?>">
+				<!-- <a href="<?php echo home_url() ?>">
 					<img class="custom-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
-				</a>
+				</a> -->
 			</div>
 		<!-- end of home page logo --> 
 
 		<!-- Full site logo image to fit with smaller header space --> 
 		<?php else : ?>
 			<div class="logo-container" id="full-site-logo">
-				<a href="<?php echo home_url() ?>">
+				<!-- <a href="<?php echo home_url() ?>">
 					<img class="custom-logo" src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/WebsiteBannerWhite.png">
-				</a>
+				</a> -->
 			</div>
 		<?php endif; ?>
 		<!-- end of full site logo --> 

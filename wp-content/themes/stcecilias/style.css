@@ -32,8 +32,11 @@ ul {
     list-style: inside;
     text-align: left;
 }
-#inline-image {
+.wp-block-image img, #inline-image {
     outline: solid 0.2rem #650200;
+}
+#no-border-img, #no-border-img img {
+    outline: none!important;
 }
 .fa-eye {
     float: left;
@@ -130,13 +133,34 @@ a:hover .nav-title,
 /* NAVBAR */
 .main-navigation a {
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 20px;
     letter-spacing: 0.2rem;
     line-height: 2.5;
 }
 .main-navigation li {
-    margin-top: -10px;
+    float: right;
 }
+.main-navigation li li {
+    float: left;
+    width: 100%;
+}
+.main-navigation ul li.menu-item-has-children:before, 
+.main-navigation ul li.menu-item-has-children:after, 
+.main-navigation ul li.page_item_has_children:before, 
+.main-navigation ul li.page_item_has_children:after {
+    left: 0.98em;
+}
+.main-navigation li li:hover, 
+.main-navigation li li.focus {
+    background: rgb(175,31,36);
+
+}
+/*@media screen and (min-width: 48em){
+    .main-navigation li li {
+        float: left;
+
+    }
+}*/
 #masthead .wrap {
     position: initial;
 }
@@ -150,9 +174,9 @@ a:hover .nav-title,
 .main-navigation .menu-item-has-children > a > .icon, 
 .main-navigation .page_item_has_children > a > .icon {
     display: inline;
-    left: -8px;
+    left: -4px;
     position: relative;
-    top: 18px;
+    top: 15px;
     float: left;
 }
 .navigation-top {
@@ -174,9 +198,19 @@ a:hover .nav-title,
     position: relative;
     text-decoration: none;
     color: #fff;
-    padding: 1em 1.25em;
     transition: transform .2s;
     transform-origin: center center;
+    letter-spacing: 1px;
+}
+.nav-logo {
+    float: left;
+    margin-top: 15px;
+}
+.nav-logo-link {
+    padding: 0!important;
+}
+.nav-logo img {
+    width: 75%;
 }
 /* Sub Nav */
 .main-navigation ul li:hover > ul, 
@@ -192,39 +226,16 @@ a:hover .nav-title,
 #top-menu {
     width: 200%;
 }
+#top-menu ul {
+    float: right;
+}
 .sub-menu {
     left: -1px;
 }
 .sub-menu a {
-    margin-bottom: 10px;
+    padding: 5px 25px!important;
 } 
-.main-navigation ul li.menu-item-has-children:before, 
-.main-navigation ul li.menu-item-has-children:after, 
-.main-navigation ul li.page_item_has_children:before, 
-.main-navigation ul li.page_item_has_children:after {
-    left: 0.98em;
-}
-.main-navigation li li:hover, 
-.main-navigation li li.focus {
-    background: rgb(175,31,36);
 
-}
-.main-navigation li li.focus > a, 
-.main-navigation li li:focus > a, 
-.main-navigation li li:hover > a, 
-.main-navigation li li a:hover, 
-.main-navigation li li a:focus, 
-.main-navigation li li.current_page_item a:hover, 
-.main-navigation li li.current-menu-item a:hover, 
-.main-navigation li li.current_page_item a:focus, 
-.main-navigation li li.current-menu-item a:focus {
-    /*bottom: 10px;*/
-}
-@media screen and (min-width: 48em){
-    .main-navigation li li {
-        bottom: -10px;
-    }
-}
 /* NAVBAR END */
 
 /* HEADER */
@@ -315,6 +326,9 @@ a:hover .nav-title,
     padding-top: 75%;
 }
 /* Header background slideshow */
+.custom-header {
+    overflow: hidden!important;
+}
 .custom-header-media {
     position:relative;
     margin:0 auto;
@@ -431,7 +445,8 @@ body.page-two-column #comments,
     margin-right: auto ;
 }
 /* Offset for quick link anchors */
-#opening, #travel, #access, #tours, #events, #history, #gallery, #contact, #involved {
+#opening, #travel, #access, #tours, #events, #history, #gallery, #contact, #involved, #hire, #learning,
+#pri-visits, #sec-visits, #pri-resource, #sec-resource, #spaces, #terms, #payment, #contact {
     margin-top: -250px;
     padding-top: 250px;
 }
@@ -501,6 +516,7 @@ body.page-two-column #comments,
     margin-bottom: 1.5em;
     /*outline: solid 0.2rem #650200;*/
 }
+
 /* VIST PAGE END */
 
 /* VENUE HIRE PAGE */
@@ -509,3 +525,65 @@ body.page-two-column #comments,
 }
 
 /* STATIC PAGE CUSTOMISATIONS END */
+
+
+#covid {
+    font-size: 20px;
+}
+.offset-fix {
+    padding-top: 50px!important;
+}
+
+/* CALENDAR */
+.ecwd_theme_calendar_grey .calendar-head {
+    background: #650100!important;
+    border: none!important;
+}
+.ecwd_theme_calendar_grey .calendar-head .next a, .ecwd_theme_calendar_grey .calendar-head .previous a {
+    font-size: 24px !important;
+    text-transform: uppercase!important;
+    letter-spacing: 1px!important;
+    color: #fff !important;
+}
+.ecwd_theme_calendar_grey .calendar-head .current-month {
+    font-size: 28px !important;
+    color: #fff!important;
+}
+.ecwd_theme_calendar_grey .current-month a {
+    color: #fff !important;
+}
+.ecwd_theme_calendar_grey .calendar-head .current-month div {
+    font-size: 24px !important;
+    line-height: 20px !important;
+    text-transform: uppercase!important;
+    letter-spacing: 1px!important;
+    padding-bottom: 10px!important;
+}
+.ecwd-list-img {
+    display: none!important;
+}
+h3.event-title {
+    padding: 10px 0px!important;
+    text-align: center!important;
+}
+.event-main-content {
+    text-align: center!important;
+}
+.ecwd_theme_calendar_grey div[class^="ecwd-page"] .ecwd-day-date, 
+.ecwd_theme_calendar_grey div[class^="ecwd-page"] .day-event-list .ecwd-week-date, .ecwd_theme_calendar_grey div[class^="ecwd-page"] .day4-event-list .ecwd-week-date, 
+.ecwd_theme_calendar_grey div[class^="ecwd-page"] .week-event-list .ecwd-week-date, .ecwd_theme_calendar_grey div[class^="ecwd-page"] .ecwd_list .ecwd-list-date {
+    font-size: 16px !important;
+    padding: 10px 0px!important;
+}
+.ecwd_theme_calendar_grey .ecwd_calendar .metainfo, .event-organizers a, .event-venue a, .event-detalis span, .event-detalis a, .ecwd-date .ecwd_timezone {
+    color: #000000 !important;
+    letter-spacing: 1px!important;
+}
+.day-event-list .event-organizers, .day-event-list .event-venue, 
+.ecwd_list .event-organizers, .ecwd_list .event-venue, 
+.day4-event-list .event-organizers, .day4-event-list .event-venue, 
+.week-event-list .event-organizers, .week-event-list .event-venue {
+    width: 38%!important;
+    margin: auto!important;
+    margin-bottom: 30px!important;
+}

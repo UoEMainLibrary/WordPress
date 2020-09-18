@@ -10,13 +10,15 @@
 
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
-	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
-		<?php
+	<!--<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+	<?php
 		echo twentyseventeen_get_svg( array( 'icon' => 'bars' ) );
 		echo twentyseventeen_get_svg( array( 'icon' => 'close' ) );
 		_e( 'Menu', 'twentyseventeen' );
 		?>
-	</button>
+	</button>-->
+
+	<div class="nav-logo"><a class="nav-logo-link" href="<?php echo home_url() ?>"><img src="<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/StCsNavLogo.png"></a></div>
 
 	<?php
 	wp_nav_menu(

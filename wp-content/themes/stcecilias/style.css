@@ -632,22 +632,6 @@ h3.event-title {
 
 
 
-/* MOBILE & TABLET ADJUSTMENTS */
-
-/* TEXT ADJUSTMENTS */
-@media only screen and (max-width : 512px)
-{
-    h1, h2, h3, h4, h5 {
-        text-align: center!important;
-    }
-    h1 {
-        font-size: 32px!important;
-    }
-    h2 {
-        font-size: 28px!important;
-    }
-}
-/* TEXT ADJUSTMENTS */
 
 .mobmenu-content {
     font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
@@ -700,8 +684,21 @@ h3.event-title {
         margin-top: 14px!important;
     }
 }
-.menu-navbar-container {
-    margin-top: 10px;
+@media only screen and (max-width: 512px)
+{
+    .menu-navbar-container 
+    {
+        margin-top: 10px!important;
+    }
+    h1,h2,h3,h4,h5 {
+        text-align: center!important;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
 .mob-menu-slideout .mobmenu-right-alignment, .mob-menu-slideout-over .mobmenu-right-alignment {
     width: 300px!important;
@@ -734,4 +731,3 @@ ul#mobmenuright,
 a {
     font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
 }
-/* MOBILE & TABLET ADJUSTMENTS END */

@@ -166,7 +166,45 @@ a:hover .nav-title,
 }
 .menu-navbar-container {
     margin-top: -25px;
+    margin-right: -18%;
 }
+@media screen and (max-width: 2100px)
+{
+    .menu-navbar-container {
+        margin-right: -15%;
+    }
+}
+@media screen and (max-width: 2050px)
+{
+    .menu-navbar-container {
+        margin-right: -12%;
+    }
+}
+@media screen and (max-width: 2000px)
+{
+    .menu-navbar-container {
+        margin-right: -9%;
+    }
+}
+@media screen and (max-width: 1950px)
+{
+    .menu-navbar-container {
+        margin-right: -6%;
+    }
+}
+@media screen and (max-width: 1900px)
+{
+    .menu-navbar-container {
+        margin-right: -3%;
+    }
+}
+@media screen and (max-width: 1900px)
+{
+    .menu-navbar-container {
+        margin-right: 0%;
+    }
+}
+
 #icon-arrow-right,
 .site-header .navigation-top .menu-scroll-down {
     display: none;
@@ -205,6 +243,7 @@ a:hover .nav-title,
 .nav-logo {
     float: left;
     margin-top: 15px;
+    margin-left: -50px;
 }
 .nav-logo-link {
     padding: 0!important;
@@ -367,6 +406,9 @@ a:hover .nav-title,
 }
 .site-info a {
     color: rgb(101,1,0);
+}
+.widget-area {
+    display: none;
 }
 /* FOOTER END */
 
@@ -587,3 +629,109 @@ h3.event-title {
     margin: auto!important;
     margin-bottom: 30px!important;
 }
+
+
+
+/* MOBILE & TABLET ADJUSTMENTS */
+
+/* TEXT ADJUSTMENTS */
+@media only screen and (max-width : 512px)
+{
+    h1, h2, h3, h4, h5 {
+        text-align: center!important;
+    }
+    h1 {
+        font-size: 32px!important;
+    }
+    h2 {
+        font-size: 28px!important;
+    }
+}
+/* TEXT ADJUSTMENTS */
+
+.mobmenu-content {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
+}
+.mob-menu-header-holder.mobmenu {
+    background-color: #650100;
+    height: 100px;
+}
+@media only screen and (max-width: 512px) {
+    .mob-menu-header-holder.mobmenu {
+        height: 80px;
+    }
+}
+.mob-menu-header-holder.mobmenu span {
+    color: #650100;
+    visibility: hidden;
+    padding: 50px;
+    font-size: 100px;
+}
+.mob-menu-logo-holder {
+    background: url(../../themes/stcecilias/assets/images/logos/StCsNavLogo.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    background-position: center center!important;
+    height: 70px!important;
+    margin: auto!important;
+    width: 50%;
+    margin-top: 12px!important;
+}
+.mobmenur-container {
+    margin-right: 40px!important;
+    margin-top: 20px!important;
+}
+
+@media only screen and (max-width: 1024px){
+    body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top 
+    {
+        padding-top: 100px!important;
+    }
+}
+@media only screen and (max-width: 512px){
+    body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top 
+    {
+        padding-top: 80px!important;
+    }
+    .mob-menu-logo-holder {
+        margin-top: 4px!important;
+    }
+    .mobmenur-container {
+        margin-top: 14px!important;
+    }
+}
+.menu-navbar-container {
+    margin-top: 10px;
+}
+.mob-menu-slideout .mobmenu-right-alignment, .mob-menu-slideout-over .mobmenu-right-alignment {
+    width: 300px!important;
+    background: #650100!important;
+}
+.mobmenu-left-panel .mobmenu-left-bt, .mobmenu-right-panel .mobmenu-right-bt,
+.mobmenu-right-panel .mob-cancel-button,
+#mobmenuright li a, #mobmenuright li a:visited, .show-nav-right .mob-menu-copyright, .show-nav-right .mob-expand-submenu i {
+    color: #fff!important;
+}
+.mob-expand-submenu i {
+    font-size: 18px!important;
+}
+ul#mobmenuright,
+#mobmenuright li a, #mobmenuright li a:visited, #mobmenuright .mobmenu-content h2, #mobmenuright .mobmenu-content h3, .mobmenu-left-panel .mobmenu-display-name {
+    text-transform: uppercase!important;
+}
+.mobmenu-right-panel li, .rightmbottom, .rightmtop {
+    padding: 0%!important;
+}
+.mobmenu-content #mobmenuright .sub-menu {
+    background-color: #650100!important;
+}
+.mobmenu-content #mobmenuright li:hover, 
+.mobmenu-content #mobmenuright > li > a:hover{
+    background-color: rgb(175,31,36)!important;
+}
+
+
+a {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
+}
+/* MOBILE & TABLET ADJUSTMENTS END */

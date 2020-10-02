@@ -15,7 +15,7 @@ get_header(); ?>
 <?php if (is_front_page()) : ?>
 		<!-- Don't display posts on landing page -->
 <?php else : ?>
-	<div class="wrap">
+	<div class="wrap" id="remove-from-home">
 
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">

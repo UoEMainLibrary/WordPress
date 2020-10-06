@@ -139,6 +139,7 @@ a:hover .nav-title,
 }
 .main-navigation li {
     float: right;
+    margin-top: 5px;
 }
 .main-navigation li li {
     float: left;
@@ -198,12 +199,99 @@ a:hover .nav-title,
         margin-right: -3%;
     }
 }
-@media screen and (max-width: 1900px)
+@media screen and (max-width: 1850px)
 {
     .menu-navbar-container {
         margin-right: 0%;
     }
 }
+@media screen and (max-width: 1800px)
+{
+    .menu-navbar-container {
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width: 1750px)
+{
+    .menu-navbar-container {
+        margin-right: 6%;
+    }
+}
+@media screen and (max-width: 1700px)
+{
+    .menu-navbar-container {
+        margin-right: 9%;
+    }
+    .navigation-top .wrap a {
+        font-size: 18px;
+    }
+    .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon 
+    {
+        top: 13px!important;
+    }
+    .main-navigation li {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1650px)
+{
+    .menu-navbar-container {
+        margin-right: 12%;
+    }
+    .navigation-top .wrap a {
+        font-size: 18px;
+    }
+    .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon 
+    {
+        top: 13px!important;
+    }
+    .main-navigation li {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1600px)
+{
+    .menu-navbar-container {
+        margin-right: 15%;
+    }
+    .navigation-top .wrap a {
+        font-size: 16px;
+    }
+    .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon 
+    {
+        top: 11px!important;
+    }
+    .main-navigation li {
+        margin-top: 14px;
+    }
+}
+@media screen and (max-width: 1550px)
+{
+    .menu-navbar-container {
+        margin-right: 18%;
+    }
+    .navigation-top .wrap a {
+        font-size: 16px;
+    }
+    .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon 
+    {
+        top: 11px!important;
+    }
+    .main-navigation li {
+        margin-top: 14px;
+    }
+}
+/*@media screen and (max-width: 1500px)
+{
+    .top-menu, .navigation-top
+    {
+        display: none!important;
+    }
+    .mob-menu-header-holder {
+        width: 100%!important;
+        position: fixed!important;
+    }
+}*/
 
 #icon-arrow-right,
 .site-header .navigation-top .menu-scroll-down {
@@ -228,6 +316,7 @@ a:hover .nav-title,
     background-color:rgb(101,1,0);
     font-size: 2rem;
     border: 0;
+    z-index: 999;
 }
 .navigation-top .wrap {
     margin: 0;          /* set navbar links to sit from far left to right */
@@ -629,7 +718,10 @@ h3.event-title {
     margin: auto!important;
     margin-bottom: 30px!important;
 }
-
+span.month-name {
+    font-size: 20px!important;
+}
+/* CALENDAR END */
 
 
 
@@ -639,6 +731,12 @@ h3.event-title {
 .mob-menu-header-holder.mobmenu {
     background-color: #650100;
     height: 100px;
+}
+.show-panel .mob-cancel-button {
+    margin-right: 12px;
+}
+ul#mobmenuright {
+    margin-top: 15px;
 }
 @media only screen and (max-width: 512px) {
     .mob-menu-header-holder.mobmenu {
@@ -693,11 +791,23 @@ h3.event-title {
     h1,h2,h3,h4,h5 {
         text-align: center!important;
     }
-    h1 {
+    h1,
+    .entry-title, 
+    .page .panel-content .entry-title, 
+    .page-title, 
+    body.page:not(.twentyseventeen-front-page) .entry-title 
+    {
         font-size: 32px;
     }
-    h2 {
+    h2,
+    .entry-content h2 {
         font-size: 24px;
+    }
+    #covid {
+        font-size: 16px;
+    }
+    .quick-links {
+        display: grid!important;
     }
 }
 .mob-menu-slideout .mobmenu-right-alignment, .mob-menu-slideout-over .mobmenu-right-alignment {
@@ -730,4 +840,26 @@ ul#mobmenuright,
 
 a {
     font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
+}
+
+@media only screen and (max-width: 1500px){
+    .mob-menu-header-holder 
+    {
+        width: 100%!important;
+        position: fixed!important;
+    }
+    .mobmenur-container {
+        top: 10px!important;
+    }
+    i.mob-icon-menu.mob-menu-icon {
+        color: #fff!important;
+        font-size: 32px!important;
+    }
+}
+@media only screen and (min-width: 1501px){
+    .mob_menu, .mobmenu-panel, .mobmenu, .mobmenu-cart-panel, 
+    .mobmenu-footer-menu-holder, .mobmenu-right-panel, .mobmenu-left-panel 
+    {
+        display: none!important;
+    }
 }

@@ -116,7 +116,10 @@ a:hover .nav-title,
 .wp-block-buttons {
     display: flex;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+.wp-block-buttons.tour-button {
+    margin-top: -40px;
 }
 .wp-block-buttons a,
 .wp-block-button a,
@@ -269,6 +272,22 @@ a:hover .nav-title,
 {
     .menu-navbar-container {
         margin-right: 18%;
+    }
+    .navigation-top .wrap a {
+        font-size: 16px;
+    }
+    .main-navigation .menu-item-has-children > a > .icon, .main-navigation .page_item_has_children > a > .icon 
+    {
+        top: 11px!important;
+    }
+    .main-navigation li {
+        margin-top: 14px;
+    }
+}
+@media screen and (max-width: 1500px)
+{
+    .menu-navbar-container {
+        margin-right: 0%;
     }
     .navigation-top .wrap a {
         font-size: 16px;
@@ -647,7 +666,23 @@ body.page-two-column #comments,
     margin-bottom: 1.5em;
     /*outline: solid 0.2rem #650200;*/
 }
-
+#tour-title {
+    margin-bottom: 40px;
+}
+#pri-school-mob, #sec-school-mob {
+    display: none;
+}
+@media only screen and (max-width: 400px)
+{
+    #pri-school, #sec-school
+    {
+        display: none!important;
+    }
+    #pri-school-mob, #sec-school-mob 
+    {
+        display: block!important;
+    }
+}
 /* VIST PAGE END */
 
 /* VENUE HIRE PAGE */
@@ -854,6 +889,19 @@ a {
     i.mob-icon-menu.mob-menu-icon {
         color: #fff!important;
         font-size: 32px!important;
+    }
+
+    .mob-menu-slideout .mobmenu-panel, .mob-menu-slideout-over .mobmenu-panel, .mob-menu-slideout .mobmenu-cart-panel, .mob-menu-slideout-over .mobmenu-cart-panel {
+        position: fixed!important;
+        top: 0!important;
+        height: 100%!important;
+        overflow-y: auto!important;
+        overflow-x: auto!important;
+        z-index: 1;
+        opacity: 1!important;
+    }
+    .show-nav-left .mobmenu-panel.show-panel, .show-nav-right .mobmenu-panel.show-panel {
+        z-index: 300000!important;
     }
 }
 @media only screen and (min-width: 1501px){

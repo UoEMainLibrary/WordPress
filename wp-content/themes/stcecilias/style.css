@@ -853,13 +853,15 @@ ul#mobmenuright {
     margin-top: 20px!important;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px)
+{
     body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top 
     {
         padding-top: 100px!important;
     }
 }
-@media only screen and (max-width: 512px){
+@media only screen and (max-width: 512px)
+{
     body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top 
     {
         padding-top: 80px!important;
@@ -879,9 +881,6 @@ ul#mobmenuright {
         margin: auto!important;
         width: 50%!important;
     }
-}
-@media only screen and (max-width: 512px)
-{
     .menu-navbar-container 
     {
         margin-top: 10px!important;
@@ -906,6 +905,82 @@ ul#mobmenuright {
     }
     .quick-links {
         display: grid!important;
+    }
+}
+@media only screen and (max-width: 420px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 55%!important;
+    }
+}
+@media only screen and (max-width: 380px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 60%!important;
+    }
+}
+@media only screen and (max-width: 350px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 65%!important;
+    }
+}
+@media only screen and (max-width: 330px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 70%!important;
+    }
+}
+@media only screen and (max-width: 310px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 75%!important;
+    }
+    .fa-eye
+    {
+        margin-left: -10px!important;
+    }
+}
+@media only screen and (max-width: 290px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 80%!important;
+    }
+}
+@media only screen and (max-width: 270px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 85%!important;
+    }
+}
+@media only screen and (max-width: 260px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 90%!important;
+    }
+}
+@media only screen and (max-width: 230px)
+{
+    .wp-block-group
+    {
+        margin: auto!important;
+        width: 95%!important;
     }
 }
 .mob-menu-slideout .mobmenu-right-alignment, .mob-menu-slideout-over .mobmenu-right-alignment {

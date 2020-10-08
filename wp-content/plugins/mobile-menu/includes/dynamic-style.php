@@ -249,9 +249,7 @@ if ( 0 < $border_menu_size ) {
 if ( '' !== $titan->getOption( 'hide_elements' ) ) {
     ?>
 /* Our css Custom Options values */
-@media only screen and (max-width:<?php 
-    echo  $trigger_res ;
-    ?>px){
+@media only screen and (max-width:1500px){
 	<?php 
     echo  $titan->getOption( 'hide_elements' ) ;
     ?> {
@@ -264,9 +262,7 @@ if ( '' !== $titan->getOption( 'hide_elements' ) ) {
 
 ?>
 
-@media only screen and (max-width:<?php 
-echo  $trigger_res ;
-?>px) {
+@media only screen and (max-width:1500px) {
 
 		<?php 
 ?>

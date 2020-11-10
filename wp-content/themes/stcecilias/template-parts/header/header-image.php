@@ -34,3 +34,5 @@
 	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
 </div><!-- .custom-header -->
+<?php
+get_footer();

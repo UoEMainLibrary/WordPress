@@ -64,12 +64,14 @@
 
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->
-<!--<div class="branding-background"></div>-->
-
 
 <!-- Containers for funding and partner logos -->
 <!-- Only display funding logos on front page -->
 <?php if ( is_front_page() ) : ?>
+<div class="branding-logos-background-text">
+	<p> Scotland's oldest purpose-built concert hall - home to Edinburghs musical instrument collection</p>
+</div>
+<div class="branding-logos-background"></div>
 <div class="branding-logos-background"></div>
 <div class="branding-logos">
 	<div id="flogo1" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/uoelogo.png)"></div>

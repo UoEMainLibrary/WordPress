@@ -24,7 +24,7 @@ a {
 }
 b, strong {
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.1em;
     letter-spacing: 0.1em;
 }
@@ -115,8 +115,12 @@ a:hover .nav-title,
 /* Buttons */
 .wp-block-buttons {
     display: flex;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 40px;
+}
+.wp-block-button .wp-block-button__link
+{
+    font-weight: 600!important;
 }
 .wp-block-buttons.tour-button {
     margin-top: -40px;
@@ -135,14 +139,22 @@ a:hover .nav-title,
 
 /* NAVBAR */
 .main-navigation a {
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 0.2rem;
     line-height: 2.5;
 }
+#top-menu li {
+    height: 100px;
+}
+.sub-menu {
+    font-size: 20px!important;
+    margin-top: 0px!important;
+}
+.sub-menu li {
+    height: auto!important;
+}
 .main-navigation li {
     float: right;
-    margin-top: 5px;
 }
 .main-navigation li li {
     float: left;
@@ -157,8 +169,8 @@ a:hover .nav-title,
 .main-navigation li li:hover, 
 .main-navigation li li.focus {
     background: rgb(175,31,36);
-
 }
+
 #masthead .wrap {
     position: initial;
 }
@@ -283,6 +295,18 @@ a:hover .nav-title,
     }
     .main-navigation li {
         margin-top: 10px;
+    }
+    .sub-menu 
+    {
+        margin: -15px 0px 0px 0px!important;
+    }
+    .main-navigation ul li.menu-item-has-children:before, .main-navigation ul li.page_item_has_children:before
+    {
+        bottom: 15px!important;
+    }
+    .main-navigation ul li.menu-item-has-children:after, .main-navigation ul li.page_item_has_children:after
+    {
+        bottom: 15px!important;
     }
 }
 @media screen and (max-width: 1650px)
@@ -417,9 +441,11 @@ a:hover .nav-title,
 }
 .sub-menu {
     left: -1px;
+    margin-top: -5px;
 }
 .sub-menu a {
     padding: 5px 25px!important;
+    font-size: 18px!important;
 } 
 /* Sub Nav end */
 /* NAVBAR END */
@@ -451,43 +477,47 @@ a:hover .nav-title,
 .funding-logo img{
     height: 100px;
 }
-.branding-background {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 120px;
+.branding-logos-background-text {
+    position: fixed;
     width: 100%;
-    height: 250px;
-    background-color: rgb(101,1,0);
-    opacity: 0.4;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    height: 35px;
+    top: 100px;
+    opacity: 0.9 ;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(101,1,0)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-gradient(linear, left top, right top, color-stop(-150%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(125%, rgba(255, 255, 255, 0)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(101,1,0) 49%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+}
+.branding-logos-background-text p {
+    text-align: center;
+    color: #000;
+    padding: 3px 0px;
+    font-size: 18px;
 }
 .branding-logos-background {
     position: absolute;
     width: 100%;
     height: 100px;
     bottom: 0;
-    opacity: 0.75   ;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    opacity: 0.75;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(-25%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(125%, rgba(255, 255, 255, 0)));
+    background: -webkit-gradient(linear, left top, right top, color-stop(-250%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(225%, rgba(255, 255, 255, 0)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) -25%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
 }
 .custom-logo {
     max-width: 100%;
@@ -542,6 +572,13 @@ a:hover .nav-title,
     13.33%  { opacity: 1; }
     16.65%  { opacity: 0; }
     100%    { opacity: 0; }
+}
+@media only screen and (max-width: 1500px)
+{
+    .nav, .main-navigation, .genesis-nav-menu, #main-header, #et-top-navigation, .site-header, 
+    .site-branding, .ast-mobile-menu-buttons, .storefront-handheld-footer-bar {
+        display: block!important;
+    } 
 }
 /* Header background slideshow end */
 /* HEADER END */
@@ -601,20 +638,20 @@ body.page-two-column #comments,
 .entry-content h2 {
     font-size: 2rem;
     font-weight: 800;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.3rem;
     color: #222;
 }
 .entry-content h3 {
     font-size: 1.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: capitalize;
     text-align: left;
     letter-spacing: 0.3rem;
 }
 .entry-content h4 {
     font-size: 1.3rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1rem;
 }
 /* Set the sub headers to follow the same style rules and the page titles end */
@@ -628,7 +665,7 @@ body.page-two-column #comments,
     padding: 0px;
     overflow: hidden;
     padding-bottom: 5rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .quick-links li {
     float: left;
@@ -661,27 +698,27 @@ body.page-two-column #comments,
 #divider-one {
     background-size: cover;
     background-position: center;
-    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-one.png");
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-one.jpg");
 }
 #divider-two {
     background-size: cover;
     background-position: center;
-    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-two.png");
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-two.jpg");
 }
 #divider-three {
     background-size: cover;
     background-position: center;
-    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-three.png");
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-three.jpg");
 }
 #divider-four {
     background-size: cover;
     background-position: center;
-    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-four.png");
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-four.jpg");
 }
 #divider-five {
     background-size: cover;
     background-position: center;
-    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-five.png");
+    background-image: url("../../themes/stcecilias/assets/images/dividers/divider-five.jpg");
 }
 .divider-offset {
     width: auto;
@@ -997,7 +1034,7 @@ ul#mobmenuright {
 }
 ul#mobmenuright,
 #mobmenuright li a, #mobmenuright li a:visited, #mobmenuright .mobmenu-content h2, #mobmenuright .mobmenu-content h3, .mobmenu-left-panel .mobmenu-display-name {
-    text-transform: uppercase!important;
+    text-transform: capitalize!important;
 }
 .mobmenu-right-panel li, .rightmbottom, .rightmtop {
     padding: 0%!important;
@@ -1049,4 +1086,42 @@ ul#mobmenuright,
 
 a {
     font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
+}
+
+@media(max-width: 1701)
+{
+    .main-navigation ul {
+        margin: none!important;
+    }
+    .sub-menu {
+        left: -1px;
+        margin: -5px 0px 0px 0px!important;
+    }
+    ul.sub-menu {
+        margin: -5px 0px 0px 0px!important;
+    }
+
+    .main-navigation ul li.menu-item-has-children:before, .main-navigation ul li.page_item_has_children:before
+    {
+        bottom: 5px!important;
+    }
+    .main-navigation ul li.menu-item-has-children:after, .main-navigation ul li.page_item_has_children:after
+    {
+        bottom: 5px!important;
+    }
+}
+@media(max-width: 1700)
+{
+    ul.sub-menu 
+    {
+        margin: -15px 0px 0px 0px!important;
+    }
+    .main-navigation ul li.menu-item-has-children:before, .main-navigation ul li.page_item_has_children:before
+    {
+        bottom: 15px!important;
+    }
+    .main-navigation ul li.menu-item-has-children:after, .main-navigation ul li.page_item_has_children:after
+    {
+        bottom: 15px!important;
+    }
 }

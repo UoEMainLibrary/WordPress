@@ -296,6 +296,9 @@ a:hover .nav-title,
     .main-navigation li {
         margin-top: 10px;
     }
+    .sub-menu li {
+        margin-top: 0px;
+    }
     .sub-menu 
     {
         margin: -15px 0px 0px 0px!important;
@@ -324,6 +327,9 @@ a:hover .nav-title,
     .main-navigation li {
         margin-top: 10px;
     }
+    .sub-menu li {
+        margin-top: 0px;
+    }
 }
 @media screen and (max-width: 1600px)
 {
@@ -339,6 +345,9 @@ a:hover .nav-title,
     }
     .main-navigation li {
         margin-top: 14px;
+    }
+    .sub-menu li {
+        margin-top: 0px;
     }
 }
 @media screen and (max-width: 1550px)
@@ -356,6 +365,9 @@ a:hover .nav-title,
     .main-navigation li {
         margin-top: 14px;
     }
+    .sub-menu li {
+        margin-top: 0px;
+    }
 }
 @media screen and (max-width: 1500px)
 {
@@ -371,6 +383,9 @@ a:hover .nav-title,
     }
     .main-navigation li {
         margin-top: 14px;
+    }
+    .sub-menu li {
+        margin-top: 0px;
     }
 }
 /* NAVBAR SCALING ADJUSTMENTS */
@@ -483,17 +498,17 @@ a:hover .nav-title,
     height: 35px;
     top: 100px;
     opacity: 0.9 ;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 125%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(-150%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(125%, rgba(255, 255, 255, 0)));
+    background: -webkit-gradient(linear, left top, right top, color-stop(-150%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255)), color-stop(125%, rgba(255, 255, 255, 0)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 125%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 125%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 125%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 125%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -150%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 125%);
 }
 .branding-logos-background-text p {
     text-align: center;
@@ -507,17 +522,17 @@ a:hover .nav-title,
     height: 100px;
     bottom: 0;
     opacity: 0.75;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgb(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(-250%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255)), color-stop(225%, rgba(255, 255, 255, 0)));
+    background: -webkit-gradient(linear, left top, right top, color-stop(-250%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255)), color-stop(225%, rgba(255, 255, 255, 0)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 49%, rgba(255, 255, 255, 0) 225%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -250%, rgba(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
 }
 .custom-logo {
     max-width: 100%;
@@ -1124,4 +1139,213 @@ a {
     {
         bottom: 15px!important;
     }
+}
+
+
+
+/* TOUR(S) PAGE(S) */
+/* Background & Container */
+.page-id-2581 .custom-header, .page-id-2621 .custom-header,
+.page-id-2581 .navigation-top, .page-id-2621 .navigation-top,
+.page-id-2581 .site-footer, .page-id-2621 .site-footer,
+.page-id-2581 .mob-menu-header-holder.mobmenu, .page-id-2621 .mob-menu-header-holder.mobmenu {
+    display: none;
+}
+.page-id-2581 #content,
+.page-id-2581 body.mob-menu-overlay, 
+.page-id-2581 body.mob-menu-slideout, 
+.page-id-2581 body.mob-menu-slideout-over, 
+.page-id-2581 body.mob-menu-slideout-top {
+    padding: 0px!important;
+}
+/* Binks Intro */
+.page-id-2581 .site-content {
+    background: url("../../themes/stcecilias/assets/images/stcsheader8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1350px;
+}
+/* Binks Harpsichord */
+.page-id-2621 .site-content {
+    background: url("../../themes/stcecilias/assets/images/binksharpsichord.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1350px;
+    padding: 0;
+}
+.page-id-2581 .wrap, .page-id-2621 .wrap {
+    max-width: 100%!important;
+    padding: 0px;
+}
+.page-id-2581 .entry-header, .page-id-2621 .entry-header {
+    padding-top: 50px!important;
+    background-color: rgb(101,1,0,0.8);
+}
+.page-id-2581 .entry-title, .page-id-2621 .entry-title {
+    padding: 0px!important;
+    color: #fff!important;
+}
+/* Text */
+.tour-intro-text {
+    position: absolute;
+    top: 50%;   
+    transform: translate(0, -50%);
+    margin: 0% 25%;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+.tour-text-background {
+    position: relative;
+    width: 100%;
+    height: 125px; 
+    margin-top: 25%; 
+    padding: 100px 0px;  
+    transform: translate(0, -50%);
+    opacity: 0.9 ;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) -15%, rgb(66, 2, 1) 50%, rgba(0, 0, 0, 0) 125%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(-15%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(66, 2, 1)), color-stop(125%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) -15%, rgba(66, 2, 1) 50%, rgba(0, 0, 0, 0) 125%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) -15%, rgba(66, 2, 1) 50%, rgba(0, 0, 0, 0) 125%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) -15%, rgba(66, 2, 1) 50%, rgba(0, 0, 0, 0) 125%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) -15%, rgba(66, 2, 1) 50%, rgba(0, 0, 0, 0) 125%);
+}
+.page-id-2621 .tour-text-background {
+    margin-top: 125px;
+}
+/* Buttons */
+.tour-backbutton, .tour-forwardbutton {
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    color: #fff;
+}
+.tour-backbutton a, .tour-forwardbutton a {
+    color: #fff!important;
+}
+.tour-backbutton a:hover, .tour-forwardbutton a:hover {
+    text-decoration: none!important;
+    box-shadow: none!important;
+}
+.tour-backbutton {
+    left: 0;
+    margin-left: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(175,31,36, 0.7);
+    cursor: pointer;
+}
+.tour-backbutton:hover {
+    background-color: rgb(175,31,36, 1);
+}
+.tour-forwardbutton {
+    right: 0;
+    margin-right: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(26,143,26,0.7);
+    cursor: pointer;
+}
+.tour-forwardbutton:hover {
+    background-color: rgb(26,143,26,1);
+}
+.tour-forwardbutton.continue {
+    margin: 0% 42% 50px!important;
+}
+/* Smol Butts */
+.tour-previous, .tour-exit {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(175,31,36, 0.7);
+    cursor: pointer;
+}
+.tour-previous {
+    left: 50px;
+}
+.tour-exit {
+    right: 50px;
+}
+.tour-previous:hover, .tour-exit:hover {
+    background-color: rgb(175,31,36, 1);
+}
+.tour-previous a, .tour-exit a {
+    color: #fff!important;
+}
+.tour-previous a:hover, .tour-exit a:hover {
+    text-decoration: none!important;
+    box-shadow: none!important;
+}
+
+/* Audio */
+.autoplay {
+    visibility: hidden;
+}
+/* Images */ 
+.wp-block-image.left-harp {
+    float: left;
+    margin-left: 25%;
+    width: 300px;
+    cursor: pointer;
+    background: #fff;
+    outline: solid 0.2rem #650200;
+}
+.wp-block-image.left-harp figure {
+    background-color: rgb(26,143,26,1);
+    width: 300px;
+    margin: 0px;
+}
+img.wp-image-2636:hover {
+    opacity: 0.4;
+}
+.wp-block-image.right-harp {
+    float: right;
+    margin-right: 25%;
+    width: 300px;
+    cursor: pointer;
+    background: #fff;
+    outline: solid 0.2rem #650200;
+}
+.wp-block-image.right-harp figure {
+    background-color: rgb(26,143,26,1);
+    width: 300px;
+    margin: 0px;
+}
+.wp-image-2637 {
+    width: 300px;
+}
+.wp-image-2637:hover {
+    opacity: 0.4;
+}
+.wp-block-image.left-harp figcaption,
+.wp-block-image.right-harp figcaption {
+    margin: 0px -3px!important;
+    background: #650100;
+    text-align: center!important;
+    margin-top: -5px!important;
+    border: #650100 2px solid;
+}
+.instr-caption {
+    font-size: 18px;   
+    color: #fff;
+}
+/* Instrument Popups */
+/* Anon Harpsichord */
+.harpsichord-info {
+    width: 50%;
+    height: 500px;
+    background-color: #650100;
+    z-index: 999;
+    margin: 15% 25%;
+    display: none;
+    position: absolute;
 }

@@ -13,7 +13,10 @@
             wp_get_theme()->get('Version')                  // load version meta
         );
     }
-
+    
+    function play() {
+        document.getElementByClass("img.wp-image-2636").onclick(document.getElementById("anon-harpsi").play());
+    }
     /*function wpb_custom_new_menu() {
         register_nav_menu('st-cecilias-menu',__( 'St Cecilias Menu' ));
     }

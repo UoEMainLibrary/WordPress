@@ -641,8 +641,11 @@ body.page-two-column #comments,
     width: auto;
     text-align: center;
 }
-.entry-content h2, h3, h4, h5, h6, p,
-.entry-title h2, h3, h4, h5, h6, p {
+.entry-content h2, h3, h4, h5, h6,
+.entry-title h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+p {
     text-align: justify;
 }
 /* Set the page title to be nice and big */
@@ -1341,14 +1344,12 @@ a {
     background-color: rgb(26,143,26,1);
     transform: scale(1.05);
 }
-.tour-forwardbutton.continue {
+.tour-forwardbutton.continue,
+.tour-backbutton.exit {
     margin: 0% 42% 50px!important;
 }
 .first-stage {
     right: 0;
-}
-.tour-backbutton.exit {
-    margin: 0% 45% 50px!important;
 }
 /* Smol Butts */
 .tour-previous, .tour-exit {
@@ -1390,8 +1391,14 @@ a {
     width: 50%;
     margin: 10px;
 }
-div#pp-short {
-    top: 108px;
+div#tour-stage-extra {
+    top: 173px!important;
+}
+div#tour-stage-tablet {
+    top: 132px!important;
+}
+div#tour-stage-tablet-extra {
+    top: 189px!important;
 }
 .play-img {
     width: 80px;
@@ -1443,6 +1450,7 @@ input[type="submit"]:focus {
     cursor: pointer;
     background: #fff;
     outline: solid 0.2rem #650200;
+    transition: 0.4s ease-in-out;
 }
 .wp-block-image.left-harp figure {
     background-color: rgb(26,143,26,1);
@@ -1457,6 +1465,7 @@ input[type="submit"]:focus {
     cursor: pointer;
     background: #fff;
     outline: solid 0.2rem #650200;
+    transition: 0.4s ease-in-out;
 }
 .wp-block-image.right-harp figure {
     background-color: rgb(26,143,26,1);
@@ -1464,12 +1473,13 @@ input[type="submit"]:focus {
     margin: 0px;
 }
 .wp-block-image.center-harp {
-    margin: 0% 42%;
+    margin: auto;
     margin-top: -30px;
     width: 300px;
     cursor: pointer;
     background: #fff;
     outline: solid 0.2rem #650200;
+    transition: 0.4s ease-in-out;
 }
 .wp-block-image.center-harp figure {
     background-color: rgb(26,143,26,1);
@@ -1480,12 +1490,6 @@ img#tour-img {
     transition: 0.6s ease-in-out;
 }
 img#tour-img:hover {
-    opacity: 0.4;
-}
-.wp-image-2637, .wp-image-2706 {
-    width: 300px;
-}
-.wp-image-2637:hover {
     opacity: 0.4;
 }
 .wp-block-image.left-harp figcaption,
@@ -1500,6 +1504,9 @@ img#tour-img:hover {
 .instr-caption {
     font-size: 18px;   
     color: #fff;
+}
+div#tour-img-offset {
+    margin-top: -60px;
 }
 /* Instrument Popups */
 .tour-readmore a:hover,
@@ -1641,4 +1648,349 @@ img#tour-img:hover {
     0% { opacity:0; }
     40% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* RESIZING FOR MOBILE/TABLETS */
+@media only screen and (max-width: 1500px)
+{
+    /* global */
+    body#tour-body.mob-menu-overlay, 
+    body#tour-body.mob-menu-slideout, 
+    body#tour-body.mob-menu-slideout-over, 
+    body#tour-body.mob-menu-slideout-top 
+    {
+        padding-top: 0px!important;
+    }
+}
+@media only screen and (max-width: 1380px)
+{
+    /* instrument images */
+    .wp-block-image.left-harp
+    {
+        margin-left: 20%;
+    }
+    .wp-block-image.right-harp
+    {
+        margin-right: 20%;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    /* text */
+    .tour-intro-text
+    {
+        font-size: 20px;
+    }
+    /* instrument images */
+    .wp-block-image.left-harp
+    {
+        margin-left: 15%;
+    }
+    .wp-block-image.right-harp
+    {
+        margin-right: 15%;
+    }
+}
+@media only screen and (max-width: 950px)
+{
+    /* instrument images */
+    .wp-block-image.left-harp
+    {
+        margin-left: 15%;
+        width: 250px;
+        transition: none!important;
+    }
+    .wp-block-image.left-harp figure 
+    {
+        width: 250px;
+    }
+    .wp-block-image.right-harp
+    {
+        margin-right: 15%;
+        width: 250px;
+        transition: none!important;
+    }
+    .wp-block-image.right-harp figure 
+    {
+        width: 250px;
+    }
+    .wp-block-image.center-harp
+    {
+        width: 250px;
+        transition: none!important;
+    }
+    .wp-block-image.center-harp figure 
+    {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    /* text */
+    #tour-body .entry-title
+    {
+        font-size: 2.5rem;
+    }
+    .tour-intro-text
+    {
+        font-size: 18px;
+    }
+    /* play/pause button */
+    .playpause-container
+    {
+        top: 90px!important;
+    }
+    /* buttons */
+    div#tour-landing 
+    {
+        top: 76px!important;
+    }
+    div#tour-stage 
+    {
+        top: 132px!important;
+    }
+    .tour-backbutton, .tour-forwardbutton 
+    {
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    /* text */
+    #tour-body .tour-text-background
+    {
+        margin-top: 100px!important;
+    }
+    #tour-body .tour-intro-text 
+    {
+        font-size: 16px!important;
+    }
+    /* instrument images */
+    .wp-block-image.left-harp
+    {
+        width: 225px;
+    }
+    .wp-block-image.left-harp figure {
+        width: 225px;
+    }
+    .wp-block-image.right-harp
+    {
+        width: 225px;
+    }
+    .wp-block-image.right-harp figure {
+        width: 225px;
+    }
+    .wp-block-image.center-harp
+    {
+        width: 225px;
+    }
+    .wp-block-image.center-harp figure 
+    {
+        width: 225px;
+    }
+    /* buttons */
+    .play-img, .pause-img {
+        width: 65px;
+    }
+    .tour-forwardbutton.continue,
+    .tour-backbutton.exit 
+    {
+        margin: 0% 37% 50px!important;
+    }
+}
+@media only screen and (max-width: 540px)
+{
+    /* text */
+    #tour-body .entry-title
+    {
+        font-size: 1.5rem;
+    }
+    .tour-intro-text
+    {
+        margin: 0% 15%;
+    }
+    /* buttons */
+    div#tour-landing 
+    {
+        top: 50px!important;
+    }
+    div#tour-stage
+    {
+        top: 83px!important;
+    }
+    div#tour-stage-extra
+    {
+        top: 84px!important;
+    }
+    div#tour-stage-mobile-extra-z
+    {
+        top: 116px!important;
+    }
+    /* insrument images */
+    .wp-block-image.left-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.left-harp figure
+    {
+        width: 125px;
+    }
+    .wp-block-image.right-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.right-harp figure
+    {
+        width: 125px;
+    }
+    .wp-block-image.center-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.center-harp figure
+    {
+        width: 125px;
+    }
+    .instr-caption
+    {
+        font-size: 12px;
+    }
+    /* instrument popup */
+    .brave_popupSections__wrap
+    {
+        right: 20px;
+    }
+    /* buttons */ 
+    .tour-backbutton
+    {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    .tour-forwardbutton
+    {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .tour-previous 
+    {
+        font-size: 14px;
+        left: 15px;
+        margin-bottom: 10px;
+    }
+    .tour-exit
+    {
+        font-size: 14px;
+        right: 15px;
+        margin-bottom: 10px;
+    }
+    .tour-forwardbutton.continue, .tour-backbutton.exit
+    {
+        margin: 0% 39.5% 30px!important;
+    }
+    
+}
+@media only screen and (max-width: 420px)
+{
+    /* text */
+    #tour-body .entry-title
+    {
+        font-size: 1.5rem;
+    }
+    #tour-body .tour-intro-text
+    {
+        font-size: 14px!important;
+        margin: 0% 15%;
+    }
+    /* play/pause button */
+    div#tour-landing
+    {
+        top: 89px!important;
+        left: 22.5%;     
+    }
+    div#tour-stage
+    {
+        top: 88px!important;
+        left: 22.5%;
+    }
+    div#tour-stage-mobile
+    {
+        top: 122px!important;
+        left: 22.5%;
+    }
+    div#tour-stage-mobile-extra
+    {
+        top: 122px!important;
+        left: 22.5%;
+    }
+    .play-img, .pause-img
+    {
+        width: 55px;
+    }
+    /* insrument images */
+    .wp-block-image.left-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.left-harp figure
+    {
+        width: 125px;
+    }
+    .wp-block-image.right-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.right-harp figure
+    {
+        width: 125px;
+    }
+    .wp-block-image.center-harp
+    {
+        width: 125px;
+        margin-top: -80px;
+    }
+    .wp-block-image.center-harp figure
+    {
+        width: 125px;
+    }
+    .instr-caption
+    {
+        font-size: 12px;
+    }
+    /* instrument popup */
+    .brave_popupSections__wrap
+    {
+        right: 20px;
+    }
+    /* buttons */ 
+    .tour-backbutton
+    {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    .tour-forwardbutton
+    {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .tour-previous 
+    {
+        font-size: 14px;
+        left: 15px;
+        margin-bottom: 10px;
+    }
+    .tour-exit
+    {
+        font-size: 14px;
+        right: 15px;
+        margin-bottom: 10px;
+    }
+    .tour-forwardbutton.continue, .tour-backbutton.exit
+    {
+        margin: 0% 36% 30px!important;
+    }
 }

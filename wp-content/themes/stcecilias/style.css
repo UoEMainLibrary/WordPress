@@ -484,6 +484,7 @@ a:hover .nav-title,
     width: 100%;
     height: 100px;
     margin-left: 7%;
+    z-index: 999;
 } 
 .funding-logo {
     background-repeat: no-repeat;
@@ -529,7 +530,7 @@ a:hover .nav-title,
     width: 100%;
     height: 100px;
     bottom: 0;
-    opacity: 0;
+    opacity: 0.5;
     background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) -250%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 225%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(-250%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255)), color-stop(225%, rgba(255, 255, 255, 0)));

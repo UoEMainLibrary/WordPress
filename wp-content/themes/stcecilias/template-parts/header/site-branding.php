@@ -57,7 +57,7 @@
 
 
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
-			<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?>
+			<a href="#content" class="menu-scroll-down" title="Click to return to the home page" alt="Link to the home page"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?>
 				<span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span>
 			</a>
 		<?php endif; ?>
@@ -74,11 +74,16 @@
 <div class="branding-logos-background"></div>
 <div class="branding-logos-background"></div>
 <div class="branding-logos">
-	<div id="flogo1" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/uoelogo.png)"></div>
-	<div id="flogo2" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/hlflogo.png)"></div>
-	<div id="flogo3" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/amlogo.png)"></div>
-	<div id="flogo4" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/mgslogo.png)"></div>
-	<div id="flogo5" class="funding-logo" style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/mgshmiclogo.png)"></div>
+	<div id="flogo1" class="funding-logo" title="The University of Edinburgh Logo" alt="The University of Edinburgh Logo" 
+		style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/uoelogo.png)"></div>
+	<div id="flogo2" class="funding-logo" title="The Heritage Lottery Fund Logo" alt="The Heritage Lottery Fund Logo"
+		style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/hlflogo.png)"></div>
+	<div id="flogo3" class="funding-logo" title="The Accredited Museum Logo" alt="The Accredited Museum Logo"
+		style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/amlogo.png)"></div>
+	<div id="flogo4" class="funding-logo" title="The Museum Galleries of Scotland Logo" alt="The Museum Galleries of Scotland Logo"
+		style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/mgslogo.png)"></div>
+	<div id="flogo5" class="funding-logo" title="The Scottish Government Nationally Significant Collection Logo" alt="The Scottish Government Nationally Significant Collection Logo"
+		style="background-image: url(<?php echo home_url() ?>/wp-content/themes/stcecilias/assets/images/logos/mgshmiclogo.png)"></div>
 </div>
 <!-- Don't display funding logos for rest of site --> 
 <?php endif; ?>

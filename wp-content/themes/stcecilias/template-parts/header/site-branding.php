@@ -56,11 +56,11 @@
 		<!-- END OF BOILERPLATE IMPLEMENTATION -->
 
 
-		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
+		<!--<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
 			<a href="#content" class="menu-scroll-down" title="Click to return to the home page" alt="Link to the home page"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?>
 				<span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span>
 			</a>
-		<?php endif; ?>
+		<?php endif; ?>-->
 
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->

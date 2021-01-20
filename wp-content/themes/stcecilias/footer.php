@@ -15,7 +15,7 @@
 ?>
 
 	</div><!-- #content -->
-
+	</div><!-- .site-content-contain -->
 		<?php if (is_front_page()) : ?>
 			<!-- Don't display footer on landing page -->
 		<?php else : ?>
@@ -47,7 +47,6 @@
 				</div><!-- .wrap -->
 			</footer><!-- #colophon -->
 		<?php endif ; ?>
-	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
 

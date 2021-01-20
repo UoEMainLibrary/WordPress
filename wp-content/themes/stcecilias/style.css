@@ -47,6 +47,10 @@ ul {
 .fa-eye {
     float: left;
     margin-right: 10px;
+    display: none;
+}
+.skip-link, .screen-reader-text {
+    display: none!important;
 }
 .entry-content a:focus, 
 .entry-content a:hover, 
@@ -118,6 +122,7 @@ a:hover .nav-title,
     transition: none;
     transition: none;
 }
+
 /* Buttons */
 .wp-block-buttons {
     display: flex;
@@ -141,6 +146,9 @@ a:hover .nav-title,
 }
 .button-hover a:hover {
     background-color: rgb(175,31,36)!important;
+}
+.fa .fa-eye {
+    display: none!important;
 }
 /* Buttons end */
 /* GLOBAL END */
@@ -402,6 +410,9 @@ a:hover .nav-title,
 .site-header .navigation-top .menu-scroll-down {
     display: none;
 }
+.menu-scroll-down {
+    display: none!important;
+}
 .main-navigation .menu-item-has-children > a > .icon, 
 .main-navigation .page_item_has_children > a > .icon {
     display: inline;
@@ -581,8 +592,8 @@ a:hover .nav-title,
     animation: stcsfader 80s linear infinite;
 }
 .custom-header-media img:nth-child(1) { animation-delay: 0s; }
-.custom-header-media img:nth-child(2) { animation-delay: 6s; }
-.custom-header-media img:nth-child(3) { animation-delay: 6s; }
+.custom-header-media img:nth-child(2) { animation-delay: 10s; }
+.custom-header-media img:nth-child(3) { animation-delay: 20s; }
 .custom-header-media img:nth-child(4) { animation-delay: 30s; }
 .custom-header-media img:nth-child(5) { animation-delay: 40s; }
 .custom-header-media img:nth-child(6) { animation-delay: 50s; }
@@ -608,6 +619,18 @@ a:hover .nav-title,
 /* HEADER END */
 
 /* FOOTER */
+footer {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 300vh;
+    margin-top: 0;
+    border-top: 2px solid #650100;
+    background: #fff;
+}
+.site-footer {
+    border-top: 2px solid #650100!important;
+}
 .site-info {
     width: 100%;
     text-align: center;
@@ -1158,7 +1181,6 @@ a {
         bottom: 15px!important;
     }
 }
-
 
 
 /* TOUR(S) PAGE(S) */
@@ -1993,5 +2015,15 @@ div#tour-img-offset {
     .tour-forwardbutton.continue, .tour-backbutton.exit
     {
         margin: 0% 36% 30px!important;
+    }
+}
+
+
+@media screen and (min-width: 48em){
+    .site-footer {
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        margin-top: 0!important;
     }
 }

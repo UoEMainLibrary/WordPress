@@ -35,4 +35,4 @@
 
 </div><!-- .custom-header -->
 <?php
-get_footer();
+/*get_footer();*/

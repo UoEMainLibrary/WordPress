@@ -774,7 +774,9 @@ p {
     height: 50px;
 }
 /* Page dividers end */
-
+.covid-19 {
+    padding-top: 55px;
+}
 /* GLOBAL PAGE END */
 
 
@@ -1412,6 +1414,9 @@ a {
 div#tour-stage-extra {
     top: 173px!important;
 }
+div#tour-stage-extra-two {
+    top: 175px!important;
+}
 div#tour-stage-tablet {
     top: 132px!important;
 }
@@ -1506,6 +1511,7 @@ input[type="submit"]:focus {
 }
 img#tour-img {
     transition: 0.6s ease-in-out;
+    width: 300px!important;
 }
 img#tour-img:hover {
     opacity: 0.4;

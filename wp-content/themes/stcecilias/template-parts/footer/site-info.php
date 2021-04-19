@@ -24,7 +24,7 @@
 
 		<a href="http://www.ed.ac.uk/about/website/privacy" title="Privacy and Cookies Link" target="_blank">Privacy &amp; Cookies</a>
 		&nbsp;&nbsp;
-		<a href="http://www.stcecilias.ed.ac.uk/planning/" title="Website Accessibility Link" target="_blank">Accessibility</a>
+		<a href="<?php get_site_url() ?>/accessibility-statement" title="Website Accessibility Link" target="_blank">Accessibility</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		Unless explicitly stated otherwise, all material is copyright © 2020
 		<a href="http://www.ed.ac.uk" title="University of Edinburgh Home" target="_blank">University of Edinburgh</a>.

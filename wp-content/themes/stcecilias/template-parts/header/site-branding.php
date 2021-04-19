@@ -69,7 +69,7 @@
 <!-- Only display funding logos on front page -->
 <?php if ( is_front_page() ) : ?>
 <div class="branding-logos-background-text">
-	<p> Scotland's oldest purpose-built concert hall - home to Edinburghs musical instrument collection</p>
+	<p> Scotland's oldest purpose-built concert hall: home to The University of Edinburgh’s musical instrument collection</p>
 </div>
 <div class="branding-logos-background"></div>
 <div class="branding-logos-background"></div>
